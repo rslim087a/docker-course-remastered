@@ -1,0 +1,18 @@
+# Ignore Maven build output
+target/
+
+# Ignore Maven wrapper
+mvnw
+mvnw.cmd
+
+# Ignore Maven and IDE files
+.mvn/
+.idea/
+*.iml
+
+# Ignore Git metadata
+.git/
+.gitignore
+
+# Ignore other unnecessary files
+HELP.md

@@ -1,0 +1,65 @@
+version: '3'
+services:
+  ecommerce-ui:
+    image: rslim087/ecommerce-ui
+    container_name: ecommerce-ui
+    ports:
+      - "4000:4000"
+    environment:
+      - REACT_APP_PROFILE_API_HOST=http://profile-management
+      - REACT_APP_PRODUCT_API_HOST=http://product-catalog
+      - REACT_APP_INVENTORY_API_HOST=http://product-inventory
+      - REACT_APP_ORDER_API_HOST=http://order-management
+      - REACT_APP_SHIPPING_API_HOST=http://shipping-and-handling
+      - REACT_APP_CONTACT_API_HOST=http://contact-support-team
+    depends_on:
+      - profile-management
+      - product-catalog
+      - product-inventory
+      - order-management
+      - shipping-and-handling
+      - contact-support-team
+
+  profile-management:
+    image: rslim087/profile-management:0.0.1
+    container_name: profile-management
+    ports:
+      - "3003:3003"
+
+  product-catalog:
+    image: rslim087/product-catalog
+    container_name: product-catalog
+    ports:
+      - "3001:3001"
+
+  product-inventory:
+    image: rslim087/product-inventory
+    container_name: product-inventory
+    ports:
+      - "3002:3002"
+
+  order-management:
+    image: rslim087/order-management
+    container_name: order-management
+    ports:
+      - "9090:9090"
+    environment:
+      - PRODUCT_INVENTORY_API_HOST=http://product-inventory
+      - PRODUCT_CATALOG_API_HOST=http://product-catalog
+      - SHIPPING_HANDLING_API_HOST=http://shipping-and-handling
+    depends_on:
+      - product-inventory
+      - product-catalog
+      - shipping-and-handling
+
+  shipping-and-handling:
+    image: rslim087/shipping-and-handling
+    container_name: shipping-and-handling
+    ports:
+      - "8080:8080"
+
+  contact-support-team:
+    image: rslim087/contact-support-team
+    container_name: contact-support-team
+    ports:
+      - "8000:8000"
