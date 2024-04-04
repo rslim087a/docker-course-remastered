@@ -33,3 +33,10 @@ public class FileProcessor {
         return line.toUpperCase();
     }
 }
+
+// Developer: Captain DevOps, this Java application takes an input file, and generates an output file that capitalizes every letter.
+
+//            The application can be compiled using the command:
+//               javac FileProcessor.java
+//            The compiled application can be run with the input file as the first argument, and the file to output as the second argument:
+//               java FileProcessor input.txt output.txt

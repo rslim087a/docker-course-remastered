@@ -33,9 +33,3 @@ public class FileProcessor {
         return line.toUpperCase();
     }
 }
-
-
-
-// docker run -v '/Users/rayanslim/Desktop/docker-bootcamp-resources/java-file-processor:/app' openjdk:11-jdk javac /app/FileProcessor.java
-
-// docker run -v '/Users/rayanslim/Desktop/docker-bootcamp-resources/java-file-processor:/app' openjdk:11-jdk java -cp /app FileProcessor /app/input.txt /app/output.txt
