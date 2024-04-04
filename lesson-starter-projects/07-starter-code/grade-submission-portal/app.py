@@ -35,3 +35,15 @@ def api_get_grades():
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5001)
+
+# Developer: Ahoy, Captain DevOps! This Flask app is quite straightforward, but there's a catch:
+#
+# I typically run it with the Node.js API on my local machine, so I set the GRADE_SERVICE_HOST 
+# environment variable to 'localhost'. But I'm just a programmer, and I wouldn't know the first 
+# thing about setting it up in containers, the cloud, or any of those fancy environments.
+#
+# That's where you come in! I trust you to work your devops magic and ensure this app can talk 
+# to the Node.js API, no matter where they're running. You'll need to set the GRADE_SERVICE_HOST 
+# variable to whatever it needs to be for the app to find its way.
+#
+# I'll leave it in your capable hands, Captain DevOps. Make this app sail smoothly!
