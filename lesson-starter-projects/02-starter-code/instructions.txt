@@ -1,0 +1,3 @@
+Developer: Greetings, Captain DevOps! This application is usually executed with the command:
+           java -cp JavaApp.jar JavaApp
+           However, I have full confidence in your abilities to containerize it and unleash its full potential. Fair winds and following seas!
