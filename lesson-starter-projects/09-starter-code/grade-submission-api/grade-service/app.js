@@ -41,3 +41,7 @@ const port = 3000;
 app.listen(port, () => {
   console.log(`Grade service is running on port ${port}`);
 });
+
+// Developer: Captain DevOps, I'm counting on you to deploy a MongoDB instance alongside this app.
+//            The app uses environment variables (DB_HOST, DB_PORT, DB_NAME) to connect to the database.
+//            I trust your deployment skills to ensure a smooth sailing for this app!
