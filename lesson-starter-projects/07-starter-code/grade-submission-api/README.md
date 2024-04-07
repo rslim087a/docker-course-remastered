@@ -39,7 +39,7 @@ Make sure to provide the appropriate values for these environment variables when
 ## Docker Image
 The Docker image is built using the following Dockerfile:
 
-\```dockerfile
+```dockerfile
 FROM node:14
 WORKDIR /app
 COPY package*.json ./
@@ -47,7 +47,7 @@ RUN npm install
 COPY . .
 EXPOSE 3000
 CMD ["node", "app.js"]
-\```
+```
 
 The image is based on the Node.js 14 base image and runs the `app.js` file when the container starts.
 
