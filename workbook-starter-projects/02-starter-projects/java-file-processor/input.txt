@@ -1,5 +1,0 @@
-Hello, World!
-This is a sample input file.
-Each line will be processed by the Java application.
-The application will convert each line to uppercase.
-You can modify this file to test different inputs.
