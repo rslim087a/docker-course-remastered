@@ -21,7 +21,7 @@ services:
       - contact-support-team
 
   profile-management:
-    image: rslim087/profile-management:0.0.1
+    image: rslim087/profile-management
     container_name: profile-management
     ports:
       - "3003:3003"
