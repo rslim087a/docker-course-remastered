@@ -6,7 +6,7 @@
 
 # Change to the server directory
 
-# Install the client dependencies (only needed if you're not copying over the node_modules)
+# Install the server dependencies (only needed if you're not copying over the node_modules)
 # RUN npm install
 
 # Change back to the app directory
