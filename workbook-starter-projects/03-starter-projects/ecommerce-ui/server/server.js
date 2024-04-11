@@ -44,3 +44,20 @@ const port = process.env.PORT || 4000;
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
+
+// # Developer: Captain DevOps, here's how to run the app:
+
+// # 1. Clone the repo and navigate to the server directory
+// # 2. Run 'npm install' to install server dependencies
+// # 3. Navigate to the client directory and run 'npm install' for React app dependencies
+// # 4. In the client directory, run 'npm run build' to build the React app
+// # 5. Navigate back to the server directory and run 'node app.js'
+
+// # This starts the Node.js server, serving the React app and providing API routes.
+
+// # I've been running it bare metal, but I need you to containerize it.
+
+// # Let me know if you need anything else.
+
+// # Cheers,
+// # Master NodeJS
