@@ -1,0 +1,119 @@
+.plist-product-list-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px; /* Consider reducing if it's too much padding on the sides */
+  }
+      
+  .plist-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 20px; /* Reduced from 40px to 20px */
+    padding-bottom: 20px; /* Reduced from 40px to 20px */
+    margin-bottom: 20px; /* Reduced from 40px to 20px */
+  }
+        
+  .spacer {
+    visibility: hidden;
+    width: auto; /* Adjust this to match the back button width if necessary */
+  }
+  
+  .product-list-container h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 32px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+  }
+    
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px; /* Consider reducing if it's too much spacing */
+  }
+    
+  .product-card {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s ease;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .product-image {
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .product-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  
+  .product-info {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .product-info h3 {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .navigation-button-container {
+    /* Adjust the padding and alignment as needed */
+    padding-bottom: 20px;
+    text-align: left;
+  }
+  
+  .plist-back-button {
+    position: absolute;
+    left: 0; /* Position at the far left */
+    top: 50%; /* Align vertically */
+    transform: translateY(-50%); /* Center vertically */
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+  }
+  
+
+  .product-info h3 {
+    font-size: 18px; /* Adjust the font size as needed */
+    font-weight: normal; /* Change from bold to normal */
+    color: #333; /* You can choose a softer color if needed */
+    margin: 0;
+    text-transform: none; /* If you want to remove uppercase styling */
+  }
+
+  .product-card .product-info h3 {
+    font-weight: 400; /* Normal weight */
+    color: #555; /* Dark gray for better readability */
+    margin-bottom: 8px; /* Add some space below the product name */
+  }
+  
+
+  .product-card .product-description {
+    font-size: 14px; /* Smaller font size for description */
+    color: #777; /* Lighter color for description */
+    font-weight: 300; /* Lighter font weight for a more delicate look */
+  }
+  
