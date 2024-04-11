@@ -2,6 +2,14 @@
 
 This Docker image provides a microservice for managing a product catalog. It allows retrieving all products and fetching a single product by its ID.
 
+## Version 2.0.0 Update
+In version 2.0.0, the Product Catalog Microservice has been updated to include database integration, which relies on environment variables to establish a connection with a MongoDB database for storing and retrieving product data.
+
+```
+docker run -p 3001:3001 -e MONGODB_HOST=<mongo_host> -e MONGODB_PORT=<mongo_port> -e MONGODB_DATABASE=<mongo_database> product-catalog-microservice
+```
+
+
 ## Usage
 
 To run a container from this image, use the following command:
