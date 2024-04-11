@@ -6,8 +6,7 @@
 
 # Change to the server directory
 
-# Install the server dependencies (only needed if you're not copying over the node_modules)
-# RUN npm install
+# Install the server dependencies
 
 # Change back to the app directory
 
@@ -15,8 +14,7 @@
 
 # Change to the client directory
 
-# Install the client dependencies (only needed if you're not copying over the node_modules)
-# RUN npm install
+# Install the client dependencies
 
 # Build the React application
 
