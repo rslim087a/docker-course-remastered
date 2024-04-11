@@ -2,6 +2,18 @@
 
 This Docker image provides a Spring Boot application for managing user orders in an e-commerce platform. It allows adding products to a cart, calculating cart totals, and processing purchases.
 
+## Version 2.0.0 Update
+In version 2.0.0, the Order Management Microservice is updated to include MongoDB integration, which relies on environment variables to configure the MongoDB connection and other application settings.
+
+```
+docker run --network my-network \
+  -e PRODUCT_INVENTORY_API_HOST=http://product-inventory \
+  -e PRODUCT_CATALOG_API_HOST=http://product-catalog \
+  -e SHIPPING_HANDLING_API_HOST=http://shipping-and-handling \
+  -e SPRING_DATA_MONGODB_URI=mongodb://host:27017/name \
+  -e SPRING_DATA_MONGODB_DATABASE=order_management \
+  -p 9090:9090 --name order-management rslim087/order-management
+```
 ## Usage
 
 To run a container from this image, use the following command:
