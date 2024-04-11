@@ -2,6 +2,13 @@
 
 This Docker image provides a microservice for managing product inventory. It allows retrieving inventory for all products, fetching inventory for a single product by its ID, and reducing the quantity of a product when an order is placed.
 
+## Version 2.0.0 Update
+In version 2.0.0, the Product Inventory Microservice has been updated to include PostgreSQL integration. It now relies on environment variables to establish a connection with a PostgreSQL database for storing and retrieving inventory data.
+
+```
+docker run -p 3002:3002 -e POSTGRES_HOST=<postgres_host> -e POSTGRES_PORT=<postgres_port> -e POSTGRES_DB=<postgres_db> -e POSTGRES_USER=<postgres_user> -e POSTGRES_PASSWORD=<postgres_password> product-inventory-microservice
+```
+
 ## Usage
 
 To run a container from this image, use the following command:
