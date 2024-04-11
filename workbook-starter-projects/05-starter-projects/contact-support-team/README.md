@@ -12,6 +12,14 @@ docker run -p 8000:8000 contact-support-microservice
 
 The microservice will be accessible at `http://localhost:8000`.
 
+## Version 2.0.0 Update
+
+In version 2.0.0, the Contact Support Microservice is updated to include database integration, which relies on environment variables to establish a connection with a MongoDB database for storing and retrieving contact messages.
+
+```
+docker run -p 8000:8000 -e MONGODB_HOST=<mongo_host> -e MONGODB_PORT=<mongo_port> -e MONGODB_DATABASE=<mongo_database> contact-support-microservice
+```
+
 ### API Endpoints
 
 - `GET /api/contact-message`: Retrieves a contact message.
