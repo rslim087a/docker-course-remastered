@@ -2,6 +2,13 @@
 
 This Docker image provides an authentication microservice with user management functionality. It allows users to sign up, sign in, sign out, and update their profile information. It uses JSON Web Tokens (JWT) for authentication.
 
+## Version 2.0.0 Update
+In version 2.0.0, the Authentication Microservice has been updated to include MySQL integration. It now relies on environment variables to establish a connection with a MySQL database for storing and retrieving user data.
+
+```
+docker run -p 3003:3003 -e MYSQL_HOST=<mysql_host> -e MYSQL_PORT=<mysql_port> -e MYSQL_USER=<mysql_user> -e MYSQL_PASSWORD=<mysql_password> -e MYSQL_DATABASE=<mysql_database> authentication-microservice
+```
+
 ## Usage
 
 To run a container from this image, use the following command:
