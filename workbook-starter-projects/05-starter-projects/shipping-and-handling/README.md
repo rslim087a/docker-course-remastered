@@ -2,6 +2,14 @@
 
 This Docker image provides a microservice for calculating shipping fees based on product categories and time of day. It also provides a shipping explanation and returns all shipping fees for products.
 
+## Version 2.0.0 Update
+
+In version 2.0.0, the Shipping and Handling Microservice has been updated to include MongoDB integration. It now relies on environment variables to establish a connection with a MongoDB database for storing and retrieving product data.
+
+```
+docker run -p 8080:8080 -e MONGO_URI=<mongo_uri> shipping-and-handling
+```
+
 ## Usage
 
 To run a container from this image, use the following command:
