@@ -1,6 +1,6 @@
 ## 1. Which base image do you want to use?
 
-## 2. Set the working directory inside the container.
+## 2. Set the working directory.
 
 ## 3. Copy the application's project files into the working directory.
 
