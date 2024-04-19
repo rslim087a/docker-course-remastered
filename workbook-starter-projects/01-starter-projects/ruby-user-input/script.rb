@@ -25,5 +25,4 @@ print_quote(selected_quote)
 # Developer: Captain DevOps, this Ruby script generates a random inspirational quote and prints it along with an ASCII art border.
 #            To run this script, you would typically use the command:
 #            ruby script.rb
-#            Replace 'script.rb' with the actual script name.
 #            I trust you'll navigate the execution of this script within a Docker container with ease!
