@@ -39,7 +39,7 @@ app.post('/grades', async (req, res) => {
   res.json(newGrade);
 });
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`Grade service is running on port ${port}`);
 });
