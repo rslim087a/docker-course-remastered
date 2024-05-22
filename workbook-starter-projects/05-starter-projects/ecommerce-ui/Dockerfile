@@ -28,11 +28,11 @@ RUN npm install
 # Build the React application
 RUN npm run build
 
-# Change back to the app directory
+# Change back to the server directory
 WORKDIR /app/server
 
 # Expose the port that the server listens on
 EXPOSE 4000
 
 # Run the Node.js server when the container starts
-CMD ["node", "server/server.js"]
+CMD ["node", "server.js"]
