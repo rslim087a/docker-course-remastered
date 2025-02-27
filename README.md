@@ -1,3 +1,3 @@
 # Docker Course Resources
 
-Solutions to the workbooks are inside the [**Complete** Docker Bootcamp](https://udemy-redirect-app.herokuapp.com/docker)
+These resources are part of the [**Complete** Docker Bootcamp](https://www.udemy.com/course/docker-bootcamp-conquer-docker-with-real-world-projects/?couponCode=90CCF243E807764A52DB)
